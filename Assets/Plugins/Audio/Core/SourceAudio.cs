@@ -128,6 +128,8 @@ namespace Plugins.Audio.Core
             }
 
             RefreshData();
+
+            DontDestroyOnLoad(gameObject);
         }
 
         private void RefreshData()
