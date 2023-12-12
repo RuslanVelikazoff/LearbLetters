@@ -47,7 +47,7 @@ public class MenuUIManager : MonoBehaviour
             settingsButton.onClick.AddListener(() =>
             {
                 animations.Click(settingsButton);
-                animations.OpenSettingsPanel(settingsPanel, settingsImage);
+                animations.OpenPanel(settingsPanel, settingsImage);
             });
         }
     }

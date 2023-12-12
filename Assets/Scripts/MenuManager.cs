@@ -1,12 +1,20 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SettingsManager : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject settingsPanel;
+    private GameObject menuPanel;
     [SerializeField]
-    private GameObject settingsImage;
+    private GameObject menuImage;
+
+    [Space(7)]
+
+    [SerializeField]
+    private Button continueButton;
+    [SerializeField]
+    private Button exitButton;
 
     [Space(7)]
 
@@ -24,27 +32,34 @@ public class SettingsManager : MonoBehaviour
     [SerializeField]
     private Sprite soundOffSprite;
 
-    [SerializeField]
-    private Button closeButton;
-
+    [Space(7)]
     [SerializeField]
     private AnimationUI animations;
 
     private void Start()
     {
-        SetSprites();
+        SetSpites();
 
         ButtonClickAction();
     }
 
     private void ButtonClickAction()
     {
-        if (closeButton != null)
+        if (continueButton != null)
         {
-            closeButton.onClick.RemoveAllListeners();
-            closeButton.onClick.AddListener(() =>
+            continueButton.onClick.RemoveAllListeners();
+            continueButton.onClick.AddListener(() =>
             {
-                animations.ClosePanel(settingsPanel, settingsImage);
+                animations.ClosePanel(menuPanel, menuImage);
+            });
+        }
+
+        if (exitButton != null)
+        {
+            exitButton.onClick.RemoveAllListeners();
+            exitButton.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene(0);
             });
         }
 
@@ -64,7 +79,7 @@ public class SettingsManager : MonoBehaviour
                     AudioManager.Instance.OnMusic();
                 }
 
-                SetSprites();
+                SetSpites();
             });
         }
 
@@ -84,12 +99,12 @@ public class SettingsManager : MonoBehaviour
                     AudioManager.Instance.OnSounds();
                 }
 
-                SetSprites();
+                SetSpites();
             });
         }
     }
 
-    private void SetSprites()
+    private void SetSpites()
     {
         if (PlayerPrefs.GetFloat("MusicVolume") == 1f)
         {
