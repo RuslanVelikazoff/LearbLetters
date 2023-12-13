@@ -54,14 +54,14 @@ public class MenuUIManager : MonoBehaviour
 
     private void SetRecordText()
     {
-        if (!PlayerPrefs.HasKey("Record"))
+        if (!PlayerPrefs.HasKey("HighScore"))
         {
-            PlayerPrefs.SetInt("Record", 0);
-            recordText.text = "Лучший результат: " + PlayerPrefs.GetFloat("Record").ToString();
+            PlayerPrefs.SetInt("HighScore", 0);
+            recordText.text = "Лучший результат: " + PlayerPrefs.GetInt("HighScore").ToString();
         }
         else
         {
-            recordText.text = "Лучший результат: " + PlayerPrefs.GetFloat("Record").ToString();
+            recordText.text = "Лучший результат: " + PlayerPrefs.GetInt("HighScore").ToString();
         }
     }
 }
