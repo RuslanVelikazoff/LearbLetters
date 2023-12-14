@@ -7,6 +7,8 @@ public class AnimationUI : MonoBehaviour
 {
     public void Click(Button button)
     {
+        AudioManager.Instance.PlaySound("Click");
+
         Sequence sequence = DOTween.Sequence();
 
         sequence.Append(button.transform.DOScale(new Vector3(.8f, .8f, .8f), .2f))

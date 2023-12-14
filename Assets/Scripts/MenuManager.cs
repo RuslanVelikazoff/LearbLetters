@@ -50,6 +50,7 @@ public class MenuManager : MonoBehaviour
             continueButton.onClick.RemoveAllListeners();
             continueButton.onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlaySound("Click");
                 animations.ClosePanel(menuPanel, menuImage);
             });
         }
