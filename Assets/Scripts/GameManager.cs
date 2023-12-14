@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Button[] animalButton;
     [SerializeField]
+    private Image[] animalImage;
+    [SerializeField]
+    private Text[] animalText;
+    [SerializeField]
     private Sprite[] animalSprite;
 
     [Space(7)]
@@ -92,76 +96,92 @@ public class GameManager : MonoBehaviour
             case 0:
                 Debug.Log("Правильная кнопка 1");
                 //Первый спрайт
-                animalButton[0].GetComponent<Image>().sprite = animalSprite[correctIndex];
+                animalImage[0].sprite = animalSprite[correctIndex];
+                animalText[0].text = animalSprite[correctIndex].name;
                 spritesCopy.RemoveAt(correctIndex);
                 //Второй спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[1].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[1].sprite = spritesCopy[randomSprite];
+                animalText[1].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Третий спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[2].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[2].sprite = spritesCopy[randomSprite];
+                animalText[2].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Четвертый спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[3].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[3].sprite = spritesCopy[randomSprite];
+                animalText[3].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 break;
 
             case 1:
                 Debug.Log("Правильная кнопка 2");
                 //Второй спрайт
-                animalButton[1].GetComponent<Image>().sprite = animalSprite[correctIndex];
+                animalImage[1].sprite = animalSprite[correctIndex];
+                animalText[1].text = animalSprite[correctIndex].name;
                 spritesCopy.RemoveAt(correctIndex);
                 //Первый спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[0].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[0].sprite = spritesCopy[randomSprite];
+                animalText[0].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Третий спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[2].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[2].sprite = spritesCopy[randomSprite];
+                animalText[2].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Четвертый спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[3].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[3].sprite = spritesCopy[randomSprite];
+                animalText[3].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 break;
 
             case 2:
                 Debug.Log("Правильная кнопка 3");
                 //Третий спрайт
-                animalButton[2].GetComponent<Image>().sprite = animalSprite[correctIndex];
+                animalImage[2].sprite = animalSprite[correctIndex];
+                animalText[2].text = animalSprite[correctIndex].name;
                 spritesCopy.RemoveAt(correctIndex);
                 //Первый спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[0].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[0].sprite = spritesCopy[randomSprite];
+                animalText[0].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Второй спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[1].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[1].sprite = spritesCopy[randomSprite];
+                animalText[1].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Четвертый спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[3].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[3].sprite = spritesCopy[randomSprite];
+                animalText[3].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 break;
 
             case 3:
                 Debug.Log("Правильная кнопка 4");
                 //Четвертый спрайт
-                animalButton[3].GetComponent<Image>().sprite = animalSprite[correctIndex];
+                animalImage[3].sprite = animalSprite[correctIndex];
+                animalText[3].text = animalSprite[correctIndex].name;
                 spritesCopy.RemoveAt(correctIndex);
                 //Первый спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[0].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[0].sprite = spritesCopy[randomSprite];
+                animalText[0].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Второй спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[1].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[1].sprite = spritesCopy[randomSprite];
+                animalText[1].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 //Третий спрайт
                 randomSprite = Random.Range(0, spritesCopy.Count - 1);
-                animalButton[1].GetComponent<Image>().sprite = spritesCopy[randomSprite];
+                animalImage[2].sprite = spritesCopy[randomSprite];
+                animalText[2].text = spritesCopy[randomSprite].name;
                 spritesCopy.RemoveAt(randomSprite);
                 break;
         }
