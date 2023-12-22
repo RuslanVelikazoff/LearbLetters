@@ -7,7 +7,7 @@ public class AnimationUI : MonoBehaviour
 {
     public void Click(Button button)
     {
-        AudioManager.Instance.PlaySound("Click");
+        AudioManager.Instance.Play("Click");
 
         Sequence sequence = DOTween.Sequence();
 

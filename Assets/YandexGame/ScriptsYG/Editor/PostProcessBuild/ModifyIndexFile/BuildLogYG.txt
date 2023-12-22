@@ -1,2 +1,0 @@
-Build path: /Users/user/Desktop/BuildProject/LetterGame3
-Build number: 144

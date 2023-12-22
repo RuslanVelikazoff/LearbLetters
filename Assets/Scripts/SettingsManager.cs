@@ -44,6 +44,7 @@ public class SettingsManager : MonoBehaviour
             closeButton.onClick.RemoveAllListeners();
             closeButton.onClick.AddListener(() =>
             {
+                AudioManager.Instance.Play("Click");
                 animations.ClosePanel(settingsPanel, settingsImage);
             });
         }
@@ -77,11 +78,11 @@ public class SettingsManager : MonoBehaviour
 
                 if (PlayerPrefs.GetFloat("SoundVolume") == 1f)
                 {
-                    AudioManager.Instance.OffSounds();
+                    AudioManager.Instance.OffSound();
                 }
                 else
                 {
-                    AudioManager.Instance.OnSounds();
+                    AudioManager.Instance.OnSound();
                 }
 
                 SetSprites();

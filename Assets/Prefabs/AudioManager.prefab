@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6683572315245071683}
-  - component: {fileID: 6683572315245071684}
+  - component: {fileID: 7560105916092541670}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6683572315245071684
+--- !u!114 &7560105916092541670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,14 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512158066a0a54fff92f810d544040a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceSounds: {fileID: 0}
-  sourceMusic: {fileID: 0}
   sounds:
-  - name: Music
+  - name: Theme
+    clip: {fileID: 8300000, guid: b1664345b0e3a4f3ea9fb8015d44c704, type: 3}
     volume: 0
     loop: 1
     source: {fileID: 0}
-  - name: Sounds
+  - name: Click
+    clip: {fileID: 8300000, guid: 82e6979bebfb14f11bb2d8d50220d624, type: 3}
+    volume: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 8300000, guid: b1433921eff2c4777bf45c02189be313, type: 3}
+    volume: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Lose
+    clip: {fileID: 8300000, guid: 4b49247cd0b2448fbb166ecb49750a20, type: 3}
     volume: 0
     loop: 0
     source: {fileID: 0}

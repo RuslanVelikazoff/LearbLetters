@@ -21,6 +21,8 @@ public class WinPanel : MonoBehaviour
     [SerializeField]
     private AnimationUI animations;
 
+    public InterstitialAds ad;
+
     private void Start()
     {
         ButtonClickAction();
@@ -33,6 +35,7 @@ public class WinPanel : MonoBehaviour
             continueButton.onClick.RemoveAllListeners();
             continueButton.onClick.AddListener(() =>
             {
+                ad.ShowAD();
                 SceneManager.LoadScene(1);
             });
         }

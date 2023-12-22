@@ -197,7 +197,7 @@ public class GameManager : MonoBehaviour
                     animalButton[0].onClick.RemoveAllListeners();
                     animalButton[0].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Win");
+                        AudioManager.Instance.Play("Win");
                         AddScore();
                         winPanel.OpenlPanel();
                     });
@@ -207,7 +207,7 @@ public class GameManager : MonoBehaviour
                     animalButton[1].onClick.RemoveAllListeners();
                     animalButton[1].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -217,7 +217,7 @@ public class GameManager : MonoBehaviour
                     animalButton[2].onClick.RemoveAllListeners();
                     animalButton[2].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -227,7 +227,7 @@ public class GameManager : MonoBehaviour
                     animalButton[3].onClick.RemoveAllListeners();
                     animalButton[3].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -240,7 +240,7 @@ public class GameManager : MonoBehaviour
                     animalButton[0].onClick.RemoveAllListeners();
                     animalButton[0].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -250,7 +250,7 @@ public class GameManager : MonoBehaviour
                     animalButton[1].onClick.RemoveAllListeners();
                     animalButton[1].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Win");
+                        AudioManager.Instance.Play("Win");
                         AddScore();
                         winPanel.OpenlPanel();
                     });
@@ -260,7 +260,7 @@ public class GameManager : MonoBehaviour
                     animalButton[2].onClick.RemoveAllListeners();
                     animalButton[2].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -270,7 +270,7 @@ public class GameManager : MonoBehaviour
                     animalButton[3].onClick.RemoveAllListeners();
                     animalButton[3].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -283,7 +283,7 @@ public class GameManager : MonoBehaviour
                     animalButton[0].onClick.RemoveAllListeners();
                     animalButton[0].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -293,7 +293,7 @@ public class GameManager : MonoBehaviour
                     animalButton[1].onClick.RemoveAllListeners();
                     animalButton[1].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -303,7 +303,7 @@ public class GameManager : MonoBehaviour
                     animalButton[2].onClick.RemoveAllListeners();
                     animalButton[2].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Win");
+                        AudioManager.Instance.Play("Win");
                         AddScore();
                         winPanel.OpenlPanel();
                     });
@@ -313,7 +313,7 @@ public class GameManager : MonoBehaviour
                     animalButton[3].onClick.RemoveAllListeners();
                     animalButton[3].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -326,7 +326,7 @@ public class GameManager : MonoBehaviour
                     animalButton[0].onClick.RemoveAllListeners();
                     animalButton[0].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -336,7 +336,7 @@ public class GameManager : MonoBehaviour
                     animalButton[1].onClick.RemoveAllListeners();
                     animalButton[1].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -346,7 +346,7 @@ public class GameManager : MonoBehaviour
                     animalButton[2].onClick.RemoveAllListeners();
                     animalButton[2].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Lose");
+                        AudioManager.Instance.Play("Lose");
                         PlayerPrefs.SetInt("Score", 0);
                         losePanel.OpenlPanel();
                     });
@@ -356,7 +356,7 @@ public class GameManager : MonoBehaviour
                     animalButton[3].onClick.RemoveAllListeners();
                     animalButton[3].onClick.AddListener(() =>
                     {
-                        AudioManager.Instance.PlaySound("Win");
+                        AudioManager.Instance.Play("Win");
                         AddScore();
                         winPanel.OpenlPanel();
                     });

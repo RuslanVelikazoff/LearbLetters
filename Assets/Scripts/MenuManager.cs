@@ -50,7 +50,7 @@ public class MenuManager : MonoBehaviour
             continueButton.onClick.RemoveAllListeners();
             continueButton.onClick.AddListener(() =>
             {
-                AudioManager.Instance.PlaySound("Click");
+                AudioManager.Instance.Play("Click");
                 animations.ClosePanel(menuPanel, menuImage);
             });
         }
@@ -93,11 +93,11 @@ public class MenuManager : MonoBehaviour
 
                 if (PlayerPrefs.GetFloat("SoundVolume") == 1f)
                 {
-                    AudioManager.Instance.OffSounds();
+                    AudioManager.Instance.OffSound();
                 }
                 else
                 {
-                    AudioManager.Instance.OnSounds();
+                    AudioManager.Instance.OnSound();
                 }
 
                 SetSpites();
